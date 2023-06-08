@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display";
+  height: 100vh;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-color: #e0e9fe;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 15px;
+  width: 350px;
+  height: 550px;
+  background-color: white;
+  /* box-shadow: 0.1px 0.1px 10px hsl(224, 23%, 55%); */
+}
+
+.card-image {
+  border-radius: 15px;
+  height: 180px;
+  background-image: url(./images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.card-contents {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.card-title {
+  margin: 15px;
+  color: hsl(223, 47%, 23%);
+}
+
+.card-info {
+  margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: small;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-details {
+  background-color: #f9f8fe;
+  border-radius: 10px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 20px;
+  margin: 20px;
+}
+
+.icon-music {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(./images/icon-music.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.plan-and-price {
+  line-height: 1.5;
+}
+
+.plan {
+  margin-bottom: 0px;
+  font-size: small;
+  font-weight: bolder;
+  color: hsl(223, 47%, 23%);
+}
+
+.price {
+  margin-top: 0px;
+  font-size: small;
+  font-weight: lighter;
+  color: hsl(224, 23%, 55%);
+}
+
+.link {
+  font-size: small;
+  color: #392ae0;
+  text-decoration: underline;
+  text-align: end;
+  flex-grow: 2;
+}
+
+.payment-btn {
+  font-size: small;
+  font-weight: bold;
+  padding: 13px 78px;
+  background-color: #392ae0;
+  border: none;
+  color: #eee;
+  border-radius: 8px;
+}
+
+.cancel-btn {
+  border: none;
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  font-size: small;
+  font-weight: bold;
+  margin: 25px;
+}
+
+.link,
+.payment-btn,
+.cancel-btn {
+  cursor: pointer;
+  transition: ease 300ms;
+}
+
+.link:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.payment-btn:active {
+  opacity: 0.7;
+}
+
+.cancel-btn:active {
+  color: hsl(223, 47%, 23%);
+}
